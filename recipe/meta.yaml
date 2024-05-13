@@ -37,6 +37,7 @@ test:
     - pip check
   requires:
     - pip
+    - pyarrow <16
 
 about:
   home: https://github.com/vast-data/vastdb_sdk
