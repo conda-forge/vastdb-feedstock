@@ -21,6 +21,7 @@ requirements:
   run:
     - python >=3.7
     - aws-requests-auth
+    - backoff 2.2.1
     - boto3
     - python-flatbuffers
     - ibis-framework 8.0.0
