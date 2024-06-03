@@ -24,7 +24,7 @@ requirements:
     - backoff 2.2.1
     - boto3
     - python-flatbuffers
-    - ibis-framework 8.0.0
+    - ibis-framework 9.0.0
     - pyarrow
     - requests
     - xmltodict
