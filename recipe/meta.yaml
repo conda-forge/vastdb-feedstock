@@ -1,5 +1,5 @@
 {% set name = "vastdb" %}
-{% set version = "0.1.6" %}
+{% set version = "0.1.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/vastdb-{{ version }}.tar.gz
-  sha256: aec990fbf2e0331f7607cd0b6b0dce4a41917d62abcb054fdbefc9eec7e390a8
+  sha256: 8bb0e5a71af4b56cf7f5b2dd9df8041ce9068fc69a2e96163146593501635fae
 
 build:
   noarch: python
@@ -24,7 +24,7 @@ requirements:
     - backoff 2.2.1
     - boto3
     - python-flatbuffers
-    - ibis-framework 8.0.0
+    - ibis-framework 9.0.0
     - pyarrow
     - requests
     - xmltodict
