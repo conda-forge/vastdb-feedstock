@@ -25,6 +25,7 @@ requirements:
     - boto3
     - python-flatbuffers
     - ibis-framework 9.0.0
+    - ibis-framework-core 9.0.0
     - pyarrow
     - requests
     - xmltodict
