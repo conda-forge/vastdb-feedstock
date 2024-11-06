@@ -1,5 +1,5 @@
 {% set name = "vastdb" %}
-{% set version = "1.3.0" %}
+{% set version = "1.3.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/vastdb-{{ version }}.tar.gz
-  sha256: 00b1af0148a5daea0de6dd1a80b511f6213ec4eedb2be38f15fa1d21fd8a1d16
+  sha256: a09e96169b59f89475d72a6578c857c1c39b90a5cc561c0885697411275d5c25
 
 build:
   noarch: python
