@@ -6,21 +6,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/vastdb-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/vastdb-{{ version }}.tar.gz
   sha256: 00b1af0148a5daea0de6dd1a80b511f6213ec4eedb2be38f15fa1d21fd8a1d16
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - aws-requests-auth
     - backoff 2.2.1
     - boto3
@@ -40,6 +40,7 @@ test:
   requires:
     - pip
     - pyarrow <16
+    - python {{ python_min }}
 
 about:
   home: https://github.com/vast-data/vastdb_sdk
